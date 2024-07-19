@@ -45,10 +45,10 @@ while [ $# -gt 0 ]; do
       printf "Options:\n"
       printf "  --detach, -d\t\tRun in detached mode - default: ${DETACH}\n"
       printf "  --path, -pa\t\tBinds the container to a local folder - default: no bind\n"
-      printf "  --port, -p=PORT\tSpecify the port to use be used by PAServer - default: ${PORT}\n"
+      printf "  --port, -p PORT\tSpecify the port to use be used by PAServer - default: ${PORT}\n"
       printf "  --production, -pr\tEnable production mode - default: ${PRODUCTION}\n"
-      printf "  --version, -v=VERSION\tSpecify the PAServer tag to be used as image - default: ${VERSION}\n"
-      printf "  --password, -pw=PWD\tSet the password - default: ${PASSWORD}\n"
+      printf "  --version, -v VERSION\tSpecify the PAServer tag to be used as image - default: ${VERSION}\n"
+      printf "  --password, -pw PWD\tSet the password - default: ${PASSWORD}\n"
       printf "  --help, -h\t\tDisplay this help and exit\n"
       exit 0
       ;;
