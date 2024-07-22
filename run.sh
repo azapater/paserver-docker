@@ -43,6 +43,7 @@ while [ $# -gt 0 ]; do
       printf "Example 1: run.sh --path /home/user/ --detach --port 64211 --production --password securepass --name my-paserver --version latest\n\n"
       printf "Example 2: run.sh -pa /home/user/ -d -p 64211 -pr -pw securepass -n my-paserver -v latest\n\n"
       printf "Options:\n"
+      printf "  --name, -n NAME\tSpecify the name of the container - default: ${NAME}\n"
       printf "  --detach, -d\t\tRun in detached mode - default: ${DETACH}\n"
       printf "  --path, -pa\t\tBinds the container to a local folder - default: no bind\n"
       printf "  --port, -p PORT\tSpecify the port to use be used by PAServer - default: ${PORT}\n"
