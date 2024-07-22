@@ -10,7 +10,7 @@ Docker script for RAD Studio Linux deployment via PAServer
 
 The image defaults to running **PAServer** on port `64211` with the _password_ `securepass`
 
-The 10.x images use Ubuntu 18.04.6 LTS (Bionic Beaver) while the 11.x images use Ubuntu 22.04.1 LTS (Jammy Jellyfish)
+The 10.x images use Ubuntu 18.04.6 LTS (Bionic Beaver) while the +11.x images use Ubuntu 22.04.1 LTS (Jammy Jellyfish)
 
 ## 🚀 How to Use [`run.sh`] Script
 
@@ -62,13 +62,9 @@ Run PAServer in detach mode with a specific version, bind path, and password:
 ./run.sh --detach --version=1.2.3 --path=/my/custom/path --password=securepass
 ```
 
-### 🔍 Note
+### 📝 Note
 
 Make sure you have the necessary permissions to execute `run.sh`. Use `chmod +x run.sh` to make it executable if needed.
-
-Certainly! Below is a documentation section for users who prefer to use the `docker run` command directly instead of the script:
-
----
 
 ## 🐳 Using `docker run` Directly
 
@@ -111,15 +107,9 @@ docker run -d \
            -p 64211:64211 radstudio/paserver:latest
 ```
 
-### 🔍 Note
+### 📝 Note
 
 Ensure you replace `/path/on/host` and `/path/in/container` with the actual paths you wish to use for volume binding. The `latest` tag can be replaced with any specific version of the PAServer you wish to deploy.
-
-Certainly! Below is a documentation section designed to guide users on customizing their Docker image based on the provided Dockerfile. This includes adding files or folders, including extra packages, and following best practices for Docker image customization.
-
-Certainly! Below is a documentation section designed to guide users on customizing their Docker image based on the provided Dockerfile. This includes adding files or folders, including extra packages, and following best practices for Docker image customization.
-
----
 
 ## 🛠️ Customizing Your Docker Image
 
@@ -192,7 +182,7 @@ Build with a custom password:
 docker build --build-arg password=mypassword -t my-custom-image:latest .
 ```
 
-### 📝 Best Practices
+### 🛡️ Best Practices
 
 - **Minimize Layers**: Combine related commands into single `RUN` instructions where possible.
 - **Clean Up**: Remove unnecessary files and packages to keep the image size down.
