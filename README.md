@@ -1,12 +1,13 @@
-# paserver-docker
+# RAD Studio PAServer Docker
 
 <a href="https://www.embarcadero.com/products/rad-studio"><img alt="Embarcadero RAD Studio" src="https://raw.githubusercontent.com/azapater/paserver-docker/main/.github/images/rad-studio-logo.png" align="right"></a>
-Docker script for RAD Studio Linux deployment via PAServer
 
-- **Container available on [Docker Hub](https://hub.docker.com/r/radstudio/paserver)**
-- [PAServer Documentation](http://docwiki.embarcadero.com/RADStudio/en/PAServer,_the_Platform_Assistant_Server_Application)
-- [More information on RAD Studio](https://www.embarcadero.com/products/rad-studio)
-- Other containers: [InterBase](https://github.com/Embarcadero/InterBase-Docker) only, [RAD Server](https://github.com/Embarcadero/pa-radserver-docker), and [RAD Server with InterBase](https://github.com/Embarcadero/pa-radserver-ib-docker)
+Welcome to the guide for deploying RAD Studio applications on Linux using Docker and PAServer. This repository offers a Docker script designed to simplify the setup and management of your development environment, allowing RAD Studio developers to deploy and test their applications in a Linux environment.
+
+- **Container available on [Docker Hub][dockerhub-paserver]**
+- [PAServer Documentation][paserver-docs]
+- [More information on RAD Studio][radstudio]
+- Other containers: [InterBase][github-interbase-docker] only, [RAD Server][github-radserver-docker], and [RAD Server with InterBase][github-radserver-interbase-docker]
 
 The image defaults to running **PAServer** on port `64211` with the _password_ `securepass`
 
@@ -234,9 +235,18 @@ docker build --build-arg password=mypassword -t my-custom-paserver:latest .
 
 ## License and Copyright
 
-This software is Copyright &copy; 2024 by [Embarcadero Technologies, Inc.](https://www.embarcadero.com/)
+This software is Copyright &copy; 2024 by [Embarcadero Technologies, Inc.][embarcacero]
 
-_You may only use this software if you are an authorized licensee of an Embarcadero developer tools product. See the latest [software license agreement](https://www.embarcadero.com/products/rad-studio/rad-studio-eula) for any updates._
+_You may only use this software if you are an authorized licensee of an Embarcadero developer tools product. See the latest [software license agreement][embarcadero-license] for any updates._
 
-![Embarcadero(Black-100px)](https://raw.githubusercontent.com/azapater/paserver-docker/main/.github/images/embt-logo-black.png#gh-light-mode-only)
-![Embarcadero(White-100px)](https://raw.githubusercontent.com/azapater/paserver-docker/main/.github/images/embt-logo-white.png#gh-dark-mode-only)
+![Embarcadero(Black)](https://raw.githubusercontent.com/azapater/paserver-docker/main/.github/images/embt-logo-black.png#gh-light-mode-only)
+![Embarcadero(White)](https://raw.githubusercontent.com/azapater/paserver-docker/main/.github/images/embt-logo-white.png#gh-dark-mode-only)
+
+[dockerhub-paserver]: https://hub.docker.com/r/radstudio/paserver
+[radstudio]: https://www.embarcadero.com/products/rad-studio
+[paserver-docs]: http://docwiki.embarcadero.com/RADStudio/en/PAServer,_the_Platform_Assistant_Server_Application
+[github-interbase-docker]: https://github.com/Embarcadero/InterBase-Docker
+[github-radserver-docker]: https://github.com/Embarcadero/pa-radserver-docker
+[github-radserver-interbase-docker]: https://github.com/Embarcadero/pa-radserver-ib-docker
+[embarcadero]: https://www.embarcadero.com/
+[embarcadero-license]: https://www.embarcadero.com/products/rad-studio/rad-studio-eula
